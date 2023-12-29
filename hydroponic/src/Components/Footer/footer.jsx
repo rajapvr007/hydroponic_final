@@ -5,7 +5,7 @@ import ItemsContainer from "./ItemsContainer";
 function Footer() {
   return (
     <>
-      <footer className="bg-green-400 text-white">
+      <footer className="bg-teal-600 text-white">
         <div></div>
         <ItemsContainer />
         <div

@@ -6,7 +6,7 @@ export default function Accor(props) {
       <div className="border rounded-md mb-1"> 
             <button 
                 className="w-full p-4 text-left bg-gray-200  
-                           hover:bg-green-500 transition duration-300"
+                           hover:bg-green-400 transition duration-100"
                 onClick={props.toggleAccordion} 
             > 
                 {props.title} 

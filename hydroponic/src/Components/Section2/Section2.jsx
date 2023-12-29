@@ -6,7 +6,7 @@ export default function Section2() {
   return (
     <>
     <section>
-        <div className="container p-20 flex">
+        <div className="container px-24 lg:flex mg:col pb-20">
             <div className="img shadow-xl">
                 <img src={Section2_img} alt="img" className='' />
             </div>

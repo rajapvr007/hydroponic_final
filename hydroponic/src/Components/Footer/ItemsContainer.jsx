@@ -9,7 +9,7 @@ function ItemsContainer() {
       <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-16 text-center">
         <div>
           <h1 className="text-2xl py-4">Hydroponic</h1>
-          <p>
+          <p className="text-justify">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
             obcaecati repudiandae consectetur dolore ipsam alias voluptates
             eligendi id voluptate! Cumque doloribus nostrum quia obcaecati,
