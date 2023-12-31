@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import "./navbar.css";
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -59,26 +60,26 @@ export default function Navbar() {
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="text-black hover:text-green-500">
-                  <Link to="/">Home</Link>
+                  <NavLink to="/">Home</NavLink>
                   {/* <a href="javascript:void(0)">Home</a> */}
                 </li>
                 <li className="text-black hover:text-green-500">
-                  <Link to="/shop">Shopping</Link>
+                  <NavLink to="/shop">Shopping</NavLink>
                 </li>
                 <li className="text-black hover:text-green-500">
-                  <Link to="/about">About</Link>
+                  <NavLink to="/about">About</NavLink>
                   {/* <a href="javascript:void(0)">About</a> */}
                 </li>
                 <li className="text-black hover:text-green-500">
-                  <Link to="/contact">Contact</Link>
+                  <NavLink to="/contact">Contact</NavLink>
                   {/* <a href="javascript:void(0)">Contact</a> */}
                 </li>
                 <li className="text-black hover:text-green-500">
-                  <Link to="/login">Login</Link>
+                  <NavLink to="/login">Login</NavLink>
                   {/* <a href="javascript:void(0)">Login</a> */}
                 </li>
                 <li className="text-black hover:text-green-500">
-                  <Link to="/signup">Sign Up</Link>
+                  <NavLink to="/signup">Sign Up</NavLink>
                   {/* <a href="javascript:void(0)">Sing Up</a> */}
                 </li>
               </ul>

@@ -1,17 +1,14 @@
 import React from "react";
-import React from 'react';
-import ProductCard from 'productCard'; 
-import Sidebar from 'Sidebar'; 
-import Footer from 'Footer'; 
+import ProductCard from "./productcard";
+import Sidebar from "./sidebar";
+import Footer from "./footer";
 
 const Shop = () => {
   return (
     <div className="shop-page">
       <Sidebar />
 
-     
       <div className="product-cards">
-       
         <ProductCard
           image="product1.jpg"
           name="Product 1"
@@ -24,32 +21,32 @@ const Shop = () => {
           price="100"
           description="Description for Product 2"
         />
-        
+
         <ProductCard
           image="product3.jpg"
           name="Product 3"
           price="100"
           description="Description for Product 3"
         />
-       <ProductCard
+        <ProductCard
           image="product4.jpg"
           name="Product 4"
           price="100"
           description="Description for Product 3"
         />
-          <ProductCard
+        <ProductCard
           image="product5.jpg"
           name="Product 5"
           price="100"
           description="Description for Product 3"
         />
-         <ProductCard
+        <ProductCard
           image="product6.jpg"
           name="Product 6"
           price="100"
           description="Description for Product 3"
         />
-         <ProductCard
+        <ProductCard
           image="product7.jpg"
           name="Product 7"
           price="100"
@@ -57,15 +54,9 @@ const Shop = () => {
         />
       </div>
 
-      
       <Footer />
     </div>
   );
 };
 
-
-
-
-export default function Shop() {
-  return <div>Shoping</div>;
-}
+export default Shop;
