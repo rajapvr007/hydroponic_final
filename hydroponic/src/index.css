@@ -4,3 +4,8 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+.under {
+  text-decoration: underline green;
+  text-underline-offset: 12px;
+}

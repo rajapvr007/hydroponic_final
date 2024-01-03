@@ -3,8 +3,36 @@ import React from "react";
 const Sidebar = () => {
   return (
     <>
-      <div className=" my-5 mx-2 box-border w-full sy">
+      <div className=" my-5 mx-2 box-border w-full sy border-r-2">
         <h1 className="font-bold text-2xl font-sans px-5 py-4">Filters</h1>
+        <div className="px-4 rounded-md">
+          <input
+            className="border-2 p-1 text-sm rounded"
+            type="text"
+            placeholder="SEARCH"
+          />
+        </div>
+        <h1 className="font-bold text-2xl font-sans px-5 py-4">Categories</h1>
+        <div className="px-4 rounded-md">
+          <ul className="">
+            <li className="py-1">
+              <a href="#">All Products</a>
+            </li>
+            <li className="py-1">
+              <a href="#">Latest Products</a>
+            </li>
+            <li className="py-1">
+              <a href="#">Fruits </a>
+            </li>
+            <li className="py-1">
+              <a href="#">Vegitables</a>
+            </li>
+            <li className="py-1">
+              <a href="#">Category Products</a>
+            </li>
+          </ul>
+        </div>
+        <h1 className="font-bold text-2xl font-sans px-5 py-4">Price</h1>
         <div className="px-4 rounded-md">
           <select
             name="Price"

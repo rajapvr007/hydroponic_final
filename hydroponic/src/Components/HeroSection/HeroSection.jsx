@@ -18,10 +18,7 @@ export default function HeroSection() {
           <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
             <h1 class="text-5xl font-bold leading-tight mb-4">Hydroponics</h1>
             <p class="text-lg text-gray-300 mb-8">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              error, ipsa omnis corporis excepturi laudantium veniam, alias
-              doloribus iste numquam, voluptas ducimus recusandae quidem quia
-              fuga tempora sint id dicta.
+            Dive into a world of freshness with Hydroponic, where we cultivate nature's bounty to bring you the crispiest, tastiest, and most vibrant organic green vegetables. Elevate your plate, and let the goodness grow right from our farms to your table!
             </p>
             {/* <a
               href="#"

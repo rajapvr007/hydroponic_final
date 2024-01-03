@@ -58,9 +58,11 @@ export default function Navbar() {
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                <li className="text-black hover:text-green-500">
-                  <NavLink to="/">Home</NavLink>
+              <ul className=" items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                <li className="navlinks text-black hover:text-green-500">
+                  <NavLink to="/" className="item-link">
+                    Home
+                  </NavLink>
                   {/* <a href="javascript:void(0)">Home</a> */}
                 </li>
                 <li className="text-black hover:text-green-500">
