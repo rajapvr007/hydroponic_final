@@ -221,16 +221,16 @@ const Shop = () => {
         </div>
       </header>
       <div className="text-center underline underline-offset-8 under">
-        <h1 className="m-5 text-4xl ">Products</h1>
+        <h1 className="m-5 text-4xl ">Our Products</h1>
       </div>
       <div className="grid lg:grid-cols-5 md:grid-cols-5  box-border  w-full ">
         <Sidebar />
 
         <div className="bg-white col-span-4  my-5 mx-4 ">
           <div className="mx-auto max-w-2xl px-4  sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8 ">
-            <h2 className="sr-only">Products</h2>
+            <h2 className="sr-only">Our Products</h2>
 
-            <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-8  ">
+            <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-8">
               {products.map((product) => (
                 <a key={product.id} href={product.href} className="group">
                   <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
@@ -244,7 +244,7 @@ const Shop = () => {
                   <p className="mt-1 text-lg font-medium text-gray-900">
                     {product.price}
                   </p>
-                  <button className=" m-2 bg-green-400 rounded p-2 cursor-pointer hover:bg-green-600">
+                  <button className=" m-2 bg-green-400 rounded p-1.5 text-sm cursor-pointer hover:bg-green-600">
                     Add to Cart
                   </button>
                 </a>

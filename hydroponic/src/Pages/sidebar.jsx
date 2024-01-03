@@ -3,7 +3,7 @@ import React from "react";
 const Sidebar = () => {
   return (
     <>
-      <div className=" my-5 mx-2 box-border w-full sy border-r-2">
+      <div className=" my-5 mx-2 box-border sy border-r-2 md:w-52">
         <h1 className="font-bold text-2xl font-sans px-5 py-4">Filters</h1>
         <div className="px-4 rounded-md">
           <input
