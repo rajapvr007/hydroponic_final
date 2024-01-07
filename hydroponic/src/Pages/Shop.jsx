@@ -1,7 +1,16 @@
 import React from "react";
-// import ProductCard from './productcard'
 import Sidebar from "./sidebar";
 import ShopPic from "../assets/sbg.jpg";
+import img1 from "../../public/images/1.jpg";
+import img2 from "../../public/images/2.jpg";
+import img3 from "../../public/images/3.jpg";
+import img4 from "../../public/images/4.jpg";
+import img5 from "../../public/images/5.jpg";
+import img6 from "../../public/images/6.jpg";
+import img7 from "../../public/images/7.jpg";
+import img8 from "../../public/images/8.jpg";
+import img9 from "../../public/images/9.jpg";
+import img10 from "../../public/images/10.jpg";
 
 const Shop = () => {
   const products = [
@@ -10,7 +19,7 @@ const Shop = () => {
       name: "Earthen Bottle",
       href: "#",
       price: "$438",
-      imageSrc: "../../src/assets/1.jpg",
+      imageSrc: img1,
       imageAlt:
         "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
     },
@@ -19,7 +28,7 @@ const Shop = () => {
       name: "Nomad Tumbler",
       href: "#",
       price: "$135",
-      imageSrc: "../../src/assets/2.jpg",
+      imageSrc: img2,
       imageAlt:
         "Olive drab green insulated bottle with flared screw lid and flat top.",
     },
@@ -28,7 +37,7 @@ const Shop = () => {
       name: "Focus Paper Refill",
       href: "#",
       price: "$849",
-      imageSrc: "../../src/assets/3.jpg",
+      imageSrc: img3,
       imageAlt:
         "Person using a pen to cross a task off a productivity paper card.",
     },
@@ -37,7 +46,7 @@ const Shop = () => {
       name: "Mechanical Pencil",
       href: "#",
       price: "$55",
-      imageSrc: "../../src/assets/4.jpg",
+      imageSrc: img4,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
     },
@@ -47,7 +56,7 @@ const Shop = () => {
       name: "Mechanical Pencil",
       href: "#",
       price: "$65",
-      imageSrc: "../../src/assets/5.jpg",
+      imageSrc: img5,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
     },
@@ -56,7 +65,7 @@ const Shop = () => {
       name: "Earthen Bottle",
       href: "#",
       price: "$48",
-      imageSrc: "../../src/assets/6.jpg",
+      imageSrc: img6,
       imageAlt:
         "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
     },
@@ -65,7 +74,7 @@ const Shop = () => {
       name: "Nomad Tumbler",
       href: "#",
       price: "$35",
-      imageSrc: "../../src/assets/7.jpg",
+      imageSrc: img7,
       imageAlt:
         "Olive drab green insulated bottle with flared screw lid and flat top.",
     },
@@ -74,7 +83,7 @@ const Shop = () => {
       name: "Focus Paper Refill",
       href: "#",
       price: "$89",
-      imageSrc: "../../src/assets/8.jpg",
+      imageSrc: img8,
       imageAlt:
         "Person using a pen to cross a task off a productivity paper card.",
     },
@@ -83,7 +92,7 @@ const Shop = () => {
       name: "Machined Mechanical",
       href: "#",
       price: "$35",
-      imageSrc: "../../src/assets/9.jpg",
+      imageSrc: img9,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
     },
@@ -93,7 +102,7 @@ const Shop = () => {
       name: "Machined Pencil",
       href: "#",
       price: "$35",
-      imageSrc: "../../src/assets/10.jpg",
+      imageSrc: img10,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
     },
@@ -102,7 +111,7 @@ const Shop = () => {
       name: "Earthen Bottle",
       href: "#",
       price: "$438",
-      imageSrc: "../../src/assets/1.jpg",
+      imageSrc: img1,
       imageAlt:
         "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
     },
@@ -111,7 +120,7 @@ const Shop = () => {
       name: "Nomad Tumbler",
       href: "#",
       price: "$135",
-      imageSrc: "../../src/assets/2.jpg",
+      imageSrc: img2,
       imageAlt:
         "Olive drab green insulated bottle with flared screw lid and flat top.",
     },
@@ -120,7 +129,7 @@ const Shop = () => {
       name: "Focus Paper Refill",
       href: "#",
       price: "$849",
-      imageSrc: "../../src/assets/3.jpg",
+      imageSrc: img3,
       imageAlt:
         "Person using a pen to cross a task off a productivity paper card.",
     },
@@ -129,7 +138,7 @@ const Shop = () => {
       name: "Mechanical Pencil",
       href: "#",
       price: "$55",
-      imageSrc: "../../src/assets/4.jpg",
+      imageSrc: img4,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
     },
@@ -139,7 +148,7 @@ const Shop = () => {
       name: "Mechanical Pencil",
       href: "#",
       price: "$65",
-      imageSrc: "../../src/assets/5.jpg",
+      imageSrc: img5,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
     },
@@ -148,7 +157,7 @@ const Shop = () => {
       name: "Earthen Bottle",
       href: "#",
       price: "$48",
-      imageSrc: "../../src/assets/6.jpg",
+      imageSrc: img6,
       imageAlt:
         "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
     },
@@ -157,7 +166,7 @@ const Shop = () => {
       name: "Nomad Tumbler",
       href: "#",
       price: "$35",
-      imageSrc: "../../src/assets/7.jpg",
+      imageSrc: img7,
       imageAlt:
         "Olive drab green insulated bottle with flared screw lid and flat top.",
     },
@@ -166,7 +175,7 @@ const Shop = () => {
       name: "Focus Paper Refill",
       href: "#",
       price: "$89",
-      imageSrc: "../../src/assets/8.jpg",
+      imageSrc: img8,
       imageAlt:
         "Person using a pen to cross a task off a productivity paper card.",
     },
@@ -175,7 +184,7 @@ const Shop = () => {
       name: "Machined Mechanical",
       href: "#",
       price: "$35",
-      imageSrc: "../../src/assets/9.jpg",
+      imageSrc: img9,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
     },
@@ -185,7 +194,7 @@ const Shop = () => {
       name: "Machined Pencil",
       href: "#",
       price: "$35",
-      imageSrc: "../../src/assets/10.jpg",
+      imageSrc: img10,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
     },
