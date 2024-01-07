@@ -20,12 +20,6 @@ export default function HeroSection() {
             <p class="text-lg text-gray-300 mb-8">
             Dive into a world of freshness with Hydroponic, where we cultivate nature's bounty to bring you the crispiest, tastiest, and most vibrant organic green vegetables. Elevate your plate, and let the goodness grow right from our farms to your table!
             </p>
-            {/* <a
-              href="#"
-              class="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
-            >
-              Get Started
-            </a> */}
           </div>
         </div>
       </header>
