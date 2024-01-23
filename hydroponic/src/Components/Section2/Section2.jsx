@@ -6,14 +6,14 @@ export default function Section2() {
   return (
     <>
     <section>
-        <div className="container px-24 lg:flex mg:col pb-20">
+        <div className="container px-12 lg:px-24 lg:flex mg:col pb-20">
             <div className="img shadow-xl">
                 <img src={Section2_img} alt="img" className='' />
             </div>
             <div className='ml-5 mt-7'>
                 <h1 className='text-3xl font-bold'>They <span className='text-green-600'>Choose Us</span></h1>
                 <p className='mt-3 mb-3 font-light text-sm'>Rooted in Trust: Why They Choose Us. Join the Growing Community Embracing Sustainable Farming, Wholesome Harvests, and the Organic Lifestyle. Cultivate Change with a Trusted Partner.</p>
-                <ul>
+                <ul className=''>
                     <div className='flex m-5'>
                         <img src={Tick} alt="" className='w-5 h-5 mr-2' />
                         <li>Expertise In Organic Farming</li>

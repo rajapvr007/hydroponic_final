@@ -4,8 +4,8 @@ import Accordion from "./Accordion";
 export default function Section3() {
   return (
     <>
-      <div className="pl-20 pr-20 pb-20">
-        <h1 className=" font-bold text-3xl text-center mb-2">
+      <div className="px-8 lg:px-20 pb-10">
+        <h1 className=" font-bold text-2xl lg:text-3xl text-center mb-2">
           Frequently Asked <span className="text-green-600">Questions</span>
         </h1>
         <p className="text-center">

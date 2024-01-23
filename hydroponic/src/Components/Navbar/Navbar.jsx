@@ -6,9 +6,9 @@ export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <div className="sticky top-0 bg-white z-20">
+    <div className="sticky top-0 bg-white z-20 ">
       <nav className="w-full bg-transparent shadow">
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <Link to="/">
@@ -78,6 +78,10 @@ export default function Navbar() {
                 </li>
                 <li className="text-black hover:text-green-500">
                   <NavLink to="/login">Login</NavLink>
+                  {/* <a href="javascript:void(0)">Login</a> */}
+                </li>
+                <li className="text-black hover:text-green-500">
+                  <NavLink to="/cart">Cart</NavLink>
                   {/* <a href="javascript:void(0)">Login</a> */}
                 </li>
                 <li className="text-black hover:text-green-500">

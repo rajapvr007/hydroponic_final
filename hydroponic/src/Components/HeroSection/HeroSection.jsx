@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <div>
       <header>
-        <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+        <div class="relative  outline bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
           <div class="absolute inset-0">
             <img
               src={HomePic}

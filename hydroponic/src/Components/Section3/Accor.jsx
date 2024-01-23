@@ -3,7 +3,7 @@ import React from 'react'
 export default function Accor(props) {
   return (
     <>
-      <div className="border rounded-md mb-1"> 
+      <div className="border rounded-md mb-1 "> 
             <button 
                 className="w-full p-4 text-left bg-gray-200  
                            hover:bg-green-400 transition duration-100"
