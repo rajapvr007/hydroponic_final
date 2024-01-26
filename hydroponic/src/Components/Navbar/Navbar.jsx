@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import { BsBag } from "react-icons/bs";
 import "./navbar.css";
+import { cartContext } from "../../contexts/cartContext";
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
+  const { itemAmount } = useContext(cartContext);
 
   return (
     <div className="sticky top-0 bg-white z-20 ">
@@ -81,7 +84,19 @@ export default function Navbar() {
                   {/* <a href="javascript:void(0)">Login</a> */}
                 </li>
                 <li className="text-black hover:text-green-500">
-                  <NavLink to="/cart">Cart</NavLink>
+                  <NavLink to="/cart">
+                    {" "}
+                    {/* {cart }   */}
+                    <div
+                      // onClick={() => setIsOpen(!isOpen)}
+                      className="relative flex cursor-pointer "
+                    >
+                      <BsBag className="text-2xl" />
+                      <div className="bg-red-500  absolute -right-2 -bottom-2 text-[12px] w-[18px] h-[18px] rounded-full flex justify-center items-center text-white">
+                        {itemAmount}
+                      </div>
+                    </div>
+                  </NavLink>
                   {/* <a href="javascript:void(0)">Login</a> */}
                 </li>
                 <li className="text-black hover:text-green-500">

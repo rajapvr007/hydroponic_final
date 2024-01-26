@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import Sidebar from "./sidebar";
+// import Sidebar from "./sidebar";
 import ShopPic from "../assets/sbg.jpg";
 
-import { idFilterer, products } from "../constants/products";
+import { idFilterer, products } from "../ProductData/products";
 import { Link } from "react-router-dom";
 import { useCart } from "../contexts/cartContext";
 import { cartContext } from "../contexts/cartContext";
@@ -17,19 +17,20 @@ const Shop = () => {
   };
   return (
     <>
+      {/* {   // header of the shope page } */}
       <header>
-        <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
-          <div class="absolute inset-0">
+        <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+          <div className="absolute inset-0">
             <img
               src={ShopPic}
               alt="Background Image"
-              class="object-cover object-center w-full h-full"
+              className="object-cover object-center w-full h-full"
             />
-            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div className="absolute inset-0 bg-black opacity-50"></div>
           </div>
 
-          <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
-            <h1 class="text-5xl font-bold leading-tight mb-4 text-slate-300">
+          <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
+            <h1 className="text-5xl font-bold leading-tight mb-4 text-slate-300">
               Shop With <span className="text-green-500">Us</span>
             </h1>
             <p className="text-slate-300 text-xl">
@@ -44,15 +45,18 @@ const Shop = () => {
           </div>
         </div>
       </header>
+
+      {/* title of the shop page    */}
       <div className="text-center underline underline-offset-8 under">
         <h1 className="m-5 text-4xl ">Our Products</h1>
       </div>
+
       <div className="grid lg:grid-cols-5 md:grid-cols-5  box-border  w-full ">
-        <Sidebar />
+        {/* <Sidebar /> */}
 
         <div className="bg-white col-span-4  my-5 mx-4 ">
           <div className="mx-auto max-w-2xl px-4  sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8 ">
-            <h2 className="sr-only">Our Products</h2>
+            {/* <h2 className="sr-only">Our Products</h2> */}
 
             <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-8 ">
               {products?.map((product) => (

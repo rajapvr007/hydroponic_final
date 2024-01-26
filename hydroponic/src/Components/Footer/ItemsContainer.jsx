@@ -56,27 +56,6 @@ function ItemsContainer() {
               +040 24025674
             </li>
           </ul>
-
-          {/* <ul className="text-center">
-            <div className="flex items-center">
-              <span className="mx-2">
-                <ion-icon name="mail-open-outline"></ion-icon>
-              </span>
-              <li className="py-3">Hydroponic@gmail.com</li>
-            </div>
-            <div className="flex items-center">
-              <span className="mx-2">
-                <ion-icon name="location-outline"></ion-icon>
-              </span>
-              <li className="py-3">Hyderabad</li>
-            </div>
-            <div className="flex items-center">
-              <span className="mx-2">
-                <ion-icon name="call-outline"></ion-icon>
-              </span>
-              <li className="py-3">+040 24025674</li>
-            </div>
-          </ul> */}
         </div>
 
         <div>

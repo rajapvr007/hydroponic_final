@@ -1,12 +1,21 @@
 import { Fragment, useContext, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
 import { cartContext } from "../contexts/cartContext";
-
+import { IoMdAdd, IoMdRemove } from "react-icons/io";
+import { FaRegTrashAlt } from "react-icons/fa";
 export default function Cart() {
   const [open, setOpen] = useState(true);
-  const { cartProducts, setCartProducts } = useContext(cartContext);
-  console.log(cartProducts);
+  const {
+    cartProducts,
+    setCartProducts,
+    addToCart,
+    removeFromCart,
+    clearCart,
+    increaseAmount,
+    decreaseAmount,
+
+    total,
+  } = useContext(cartContext);
   return (
     <>
       <div className="w-full lg:px-28">
@@ -47,31 +56,44 @@ export default function Cart() {
                             <h3>
                               <a href={product.href}>{product.name}</a>
                             </h3>
-                            <p className="ml-4">{product.price}</p>
+                            <p className="ml-4">${product.price}</p>
                           </div>
-                         
                         </div>
-                        <div className="flex flex-1 items-end justify-between text-sm">
-                         <div className="flex gap-x-2">
-                         <p>Quantity</p>
-                          <select className="px-2">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                         </div>
 
-                          <div className="">
-                            <button
-                              type="button"
-                              className="font-medium text-indigo-600 hover:text-indigo-500"
+                        <div className=" flex gap-x-2 h-[36px] text-sm">
+                          {/* quantity  */}
+                          <div className="flex flex-1 h-full border text-primary font-medium  max-w-[100px] items-center">
+                            {/* decrease the  quantity of the products  */}
+                            <div
+                              onClick={() => decreaseAmount(product.id)}
+                              className="flex items-center justify-center flex-1 h-full cursor-pointer"
                             >
-                              Remove
-                            </button>
+                              <IoMdRemove />
+                            </div>
+                            {/* increment the quantity of the products  */}
+                            <div className="flex items-center justify-center h-full px-2">
+                              {product.amount}
+                            </div>
+                            <div
+                              onClick={() => increaseAmount(product.id)}
+                              className="flex items-center justify-center flex-1 h-full cursor-pointer"
+                            >
+                              <IoMdAdd />
+                            </div>
+                          </div>
+
+                          {/* final price  */}
+                          <div className="flex items-center justify-end flex-1 text-sm font-medium">
+                            {`$ ${parseFloat(
+                              product.price * product.amount
+                            ).toFixed(2)}`}
+                          </div>
+                          {/* remove the product from the cart  */}
+                          <div className="text-xl text-red-500 cursor-pointer"
+                           onClick={() => removeFromCart(product.id)} >
+                          <FaRegTrashAlt />
                           </div>
                         </div>
-                      
                       </div>
                     </li>
                   ))}
@@ -81,14 +103,23 @@ export default function Cart() {
           </div>
 
           <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
+            
             <div className="flex justify-between text-base font-medium text-gray-900">
+
               <p>Subtotal</p>
-              <p>$262.00</p>
+              <p>${total}</p>
             </div>
             <p className="mt-0.5 text-sm text-gray-500">
               Shipping and taxes calculated at checkout.
             </p>
-            <div className="mt-6">
+            <div className="mt-6 space-y-2">
+              <a
+                href="#"
+                className="flex items-center justify-center rounded-md border border-transparent bg-red-500 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-red-700 capitalize"
+                onClick={clearCart}
+              >
+               clear cart
+              </a>
               <a
                 href="#"
                 className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
